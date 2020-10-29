@@ -7,8 +7,142 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
 }
 
+.header {
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+.header > p {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  width: 100px;
+  text-align: center;
+}
+
+.main {
+  height: 800px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-archives {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.about {
+  background-color: lightgrey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.about > p:first-child {
+  margin: 0;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.archives {
+  background-color: white;
+  padding: 10px;
+}
+
+.archives > P:first-child {
+  margin: 0;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.article-two {
+  background-color: white;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.article {
+  border: 1px solid lightgrey;
+}
+
+.article-thumbnail {
+  margin-bottom: 20px;
+}
+.title {
+  background-color: lightslategrey;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content > p:first-child {
+  font-weight: bolder;
+}
+
+.content > p:last-child {
+  color: lightskyblue;
+}
+.article-one {
+  background-color: white;
+  width: 250px;
+  padding: 20px 0;
+}
+
+.login-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login {
+  width: 200px;
+  background-color: lightgrey;
+  height: 120px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-bt {
+  width: 100px;
+  background: lightskyblue;
+  border: 1px solid lightskyblue;
+  border-radius: 2px;
+}
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer > p {
+  margin: 0;
+}
+.footer-linkName:link {
+  color: purple;
+}
+
+.footer-linkTop:link {
+  color: purple;
+}
 * {
   box-sizing: border-box;
 }
