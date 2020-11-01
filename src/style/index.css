@@ -16,14 +16,8 @@ body {
   background-color: black;
   color: white;
   height: 50px;
-}
-.header > p {
-  float: left;
-  height: 50px;
-  line-height: 50px;
-  margin: 0;
-  width: 100px;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .main {
@@ -38,8 +32,6 @@ body {
   width: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   padding: 10px;
 }
 
@@ -57,12 +49,18 @@ body {
 .archives {
   background-color: white;
   padding: 10px;
+  align-items: flex-start;
 }
 
 .archives > P:first-child {
   margin: 0;
   font-weight: bolder;
   font-style: oblique;
+}
+
+.archives > p:last-child {
+  display: flex;
+  flex-direction: column;
 }
 
 .article-two {
@@ -83,8 +81,9 @@ body {
 .title {
   background-color: lightslategrey;
   height: 100px;
-  text-align: center;
-  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
@@ -129,7 +128,10 @@ body {
 }
 .footer {
   background-color: lightgrey;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 20px 0;
 }
 
